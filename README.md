@@ -23,7 +23,26 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository with a Todo CRUD API.
+
+## 🔐 AWS Cognito Integration Documentation
+
+This repository includes comprehensive documentation for integrating AWS Cognito authentication with Google OAuth support:
+
+- **[Quick Reference Guide](./QUICK_REFERENCE.md)** - Executive summary and quick answers to common questions
+- **[Complete Analysis](./COGNITO_INTEGRATION_ANALYSIS.md)** - Detailed analysis of architecture decisions and migration strategies
+- **[Implementation Guide](./IMPLEMENTATION_GUIDE.md)** - Step-by-step implementation instructions with code examples
+
+### Key Findings
+
+**Current State:** This repository has **NO existing authentication code**. There is no signup, login, forgot password, or Google OAuth implementation.
+
+**Recommendations:**
+1. ✅ Implement Google OAuth fresh with AWS Cognito (not applicable to migrate non-existent code)
+2. ✅ Use single Cognito User Pool with multiple App Clients for SSO across applications
+3. ✅ No user migration needed (no existing users)
+
+See the documentation above for detailed implementation guidance.
 
 ## Project setup
 
